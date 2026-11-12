@@ -1,0 +1,45 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.1.0"
+coroutines = "1.9.0"
+serialization = "1.7.3"
+composeBom = "2024.12.01"
+activityCompose = "1.8.2"
+biometric = "1.1.0"
+lifecycle = "2.8.3"
+okhttp = "4.12.0"
+junit = "4.13.2"
+web3j = "4.12.0"
+zxing = "3.5.3"
+securityCrypto = "1.1.0-alpha06"
+navigation = "2.8.0"
+
+[libraries]
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+junit = { module = "junit:junit", version.ref = "junit" }
+web3j-core = { module = "org.web3j:core", version.ref = "web3j" }
+web3j-crypto = { module = "org.web3j:crypto", version.ref = "web3j" }
+zxing-core = { module = "com.google.zxing:core", version.ref = "zxing" }
+security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material-icons-core = { module = "androidx.compose.material:material-icons-core" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

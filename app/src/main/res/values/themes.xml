@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NyxWallet" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#080A10</item>
+        <item name="android:textColor">#F2F3F7</item>
+    </style>
+</resources>
