@@ -45,6 +45,22 @@ android {
     }
 
     testOptions { unitTests.isReturnDefaultValues = true }
+
+    // web3j pulls tuweni-units + tuweni-bytes, both shipping
+    // META-INF/DISCLAIMER (and friends) — mergeDebugJavaResource fails
+    // on the duplicate otherwise.
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/DISCLAIMER",
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/NOTICE",
+                "META-INF/NOTICE.txt",
+                "META-INF/DEPENDENCIES",
+            )
+        }
+    }
 }
 
 dependencies {
